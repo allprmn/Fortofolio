@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-light-100 text-gray-800 dark:bg-navy-900 dark:text-gray-200 transition-colors duration-300;
+  }
+  /* Sembunyikan scrollbar agar lebih rapi (opsional) */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-light-200 dark:bg-navy-800;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-navy-700 rounded-full;
+  }
+}
