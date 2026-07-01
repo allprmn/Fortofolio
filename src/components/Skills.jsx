@@ -5,9 +5,9 @@ import {
   SiTailwindcss,
   SiJavascript,
   SiHtml5,
-  SiCss3,
   SiGit,
 } from "react-icons/si";
+import { FaCss3Alt } from "react-icons/fa"; // ← Ganti dengan ini
 
 const Skills = () => {
   const skills = [
@@ -15,7 +15,7 @@ const Skills = () => {
     { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
     { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
     { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
-    { name: "CSS3", icon: SiCss3, color: "#1572B6" },
+    { name: "CSS3", icon: FaCss3Alt, color: "#1572B6" }, // ← Di sini
     { name: "Git", icon: SiGit, color: "#F05032" },
   ];
 
